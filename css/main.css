@@ -93,13 +93,6 @@ footer{
 
 }
 
-
-
-.foter{
-  display: flex;
-
-}
-
 .foter .colum1{
   
   flex-basis: 50%;
@@ -220,23 +213,24 @@ color: white;
 .colum3 p{
   margin-top: 20px;
 }
+  /*
+  @media screen and (max-width: 900px){
+    footer{
+      position: relative
+      bottom 0 px;
+    
+    }
+    .foter{
+      flex-wrap: wrap;
+      flex-direction: column;
 
-@media screen and (max-width: 900px){
-  footer{
-    position: relative
-    bottom 0 px;
-  
+    }
+    .foter .colum1{
+      margin: 5px 0;
+    
+    }
   }
-  .foter{
-    flex-wrap: wrap;
-    flex-direction: column;
-
-  }
-  .foter .colum1{
-    margin: 5px 0;
-  
-  }
-}
+  */
 
 
 .copi{
