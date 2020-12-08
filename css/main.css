@@ -1,0 +1,277 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 1.5vw;
+}
+
+/* HEADER */
+
+#main-name {
+  padding-left: 20px;
+  width: auto;
+  font-size: 1.63vw;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background: #f1edec;
+}
+.active {
+  background: #b1abaa;
+}
+.nav-item {
+  padding: 14px 16px;
+  cursor: pointer;
+  border: none;
+}
+.nav-item > img {
+  vertical-align: text-top;
+  border-radius: 6px;
+}
+.nav-item:hover {
+  background-color: white;
+}
+.nav-item > a {
+  color: black;
+  text-decoration: none;
+  
+}
+.second-nav {
+  padding-top: 7px;
+  position: relative;
+  top: 0;
+  left: 46%;
+  float: right;
+  display: flex;
+  font-weight: bold;
+}
+
+/* main */
+main {
+  margin-top: 50px;
+}
+#main-name2 {
+  font-size: 2.5vw;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+main > .div.carta {
+  padding-bottom: 50px;
+}
+main > div.mapa > h1 {
+  text-align: center;
+  font-size: 2vw;
+  padding-bottom: 8px;
+}
+main > div.mapa {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* Footer */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #818170;
+  box-sizing: border-box;
+  
+}
+footer{
+  position: relative;
+ bottom: 0%;
+ width: 100%;
+ background: black;
+ padding: 40px; 
+
+}
+
+
+
+.foter{
+  display: flex;
+
+}
+
+.foter .colum1{
+  
+  flex-basis: 50%;
+  padding: 20px 20px ;
+ 
+}
+.foter h2{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  
+}
+.foter .social{
+  margin-top: 0px ;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: #CBAC69;
+  
+  
+}
+
+
+.fa-facebook:hover {
+color: blue;
+opacity: 0.7;
+}
+
+
+.fa-instagram:hover {
+color: red;
+    opacity: 0.7;
+}
+
+
+.fa-twitter:hover {
+color: white;
+    opacity: 0.9;
+}
+
+.foter .colum2{
+  
+  flex-basis: 50%;
+  padding: 20px 20px;
+}
+.row{
+  margin-top: 20px;
+  font-size: 1.235rem; 
+}
+
+
+.foter .colum3{
+  flex-basis: 50%;
+  padding: 20px 20px;
+}
+
+.material-icons{
+  margin-top: 20px ;
+  color: #CBAC69;
+}
+
+.colum3 form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color:#818170;
+}
+
+.colum3 form .mnsaje{
+  margin-top: 10px;
+  
+}
+.colum3 form input, .colum3 form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #CBAC69 ;
+  color: #817b57;
+}
+.colum3 form input:focus,
+.colum3 form textarea:focus{
+  outline-color: #CBAC69;
+}
+
+.colum3 form input{
+  height: 35px;
+}
+.colum3 form .butn{
+  margin-top: 10px;
+}
+.colum3 form .butn button{
+  height: 40px;
+  width: 100%;
+  border: none; 
+  outline: none;
+  background: #CBAC69;
+  color: #d9d9d9;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.colum3 form .butn button:hover{
+  background: #d9d9d9;
+  color: black;
+  border: 2px solid #CBAC69;
+}
+.colum3 p{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px){
+  footer{
+    position: relative
+    bottom 0 px;
+  
+  }
+  .foter{
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+  .foter .colum1{
+    margin: 5px 0;
+  
+  }
+}
+
+
+.copi{
+
+  padding-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+
+  .footer-botom {
+    display: flex;
+    
+  }
+  .colum4{
+    
+    flex-basis: 50%;
+    padding: 10px 40px;
+    
+  }
+
+  .lavazza {
+    
+   
+  }
+
+  .estrella {
+   
+    
+
+  }
+
+  .footer-botom .josper {
+   
+  }

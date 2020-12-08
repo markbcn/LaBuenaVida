@@ -1,0 +1,54 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  padding-top: 80px;
+  font-size: 1.5vw;
+  min-width: 50%;
+}
+
+/* HEADER */
+
+header {
+padding: 16px;
+}
+#main-name {
+width: auto;
+font-size: 1.63vw;
+font-family: 'Big Shoulders Stencil Display', cursive;
+}
+.main-nav {
+display: flex;
+align-items: center;
+position: fixed;
+top: 0%;
+}
+nav {
+width: 100%;
+background: #D5CFCE;
+}
+.nav-item {
+padding: 14px 16px;
+cursor: pointer;
+border: none;
+}
+.nav-item:hover {
+background-color: white;
+}
+.nav-item > a {
+color: black;
+text-decoration: none;
+
+}
+.second-nav {
+position: relative;
+top: 0;
+left: 36%;
+float: right;
+display: flex;
+font-weight: bold;
+}
+
+/* main */
+main {
+margin-top: 46px;
+}
