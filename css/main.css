@@ -75,6 +75,9 @@ main {
   margin-left: 160px;
 }
 
+#biografia {
+  padding-top: 70px;
+}
 .textoBiografia{
   text-align: left;
 }
