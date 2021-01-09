@@ -10,10 +10,11 @@ body {
 #main-name {
   padding-left: 20px;
   width: auto;
-  font-size: 1.63vw;
+  font-size: 1.8vw;
   font-family: 'Big Shoulders Stencil Display', cursive;
 }
 .main-nav {
+  z-index: 9;
   display: flex;
   align-items: center;
   position: fixed;
@@ -44,9 +45,6 @@ body {
 .second-nav {
   padding-top: 7px;
   position: relative;
-  top: 0;
-  left: 46%;
-  float: right;
   display: flex;
   font-weight: bold;
 }
@@ -55,14 +53,30 @@ body {
 main {
   margin-top: 50px;
 }
+#inicio {
+  background-image: url(../imagenes/restaurantImage.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #main-name2 {
   font-size: 2.5vw;
   font-family: 'Big Shoulders Stencil Display', cursive;
   font-weight: bold;
   text-align: center;
 }
-main > .div.carta {
-  padding-bottom: 50px;
+.rombo{ /* hay que hacer que tenga un borde, girarlo 90º para hacerlo rombo y background color blanco, si se gira la palabra, hacer girar el span*/
+  margin: 5px;
+  float: left;
+  width: 180px;
+  margin-top: 180px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 160px;
+}
+
+.textoBiografia{
+  text-align: left;
 }
 main > div.mapa > h1 {
   text-align: center;
@@ -72,6 +86,27 @@ main > div.mapa > h1 {
 main > div.mapa {
   padding-bottom: 20px;
   text-align: center;
+}
+
+/* .contactbtn {
+  background: #CBAC69;
+  color: #d9d9d9;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+} */
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #CBAC69 !important;
+  border-color: black !important;
+}
+.btn-primary > span, .btn-primary > i{
+  color: black;
 }
 
 /* Footer */
