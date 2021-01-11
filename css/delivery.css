@@ -8,47 +8,70 @@ body {
 
 /* HEADER */
 
-header {
-padding: 16px;
-}
 #main-name {
-width: auto;
-font-size: 1.63vw;
-font-family: 'Big Shoulders Stencil Display', cursive;
+  padding-left: 20px;
+  width: auto;
+  font-size: 1.8vw;
+  font-family: 'Big Shoulders Stencil Display', cursive;
 }
 .main-nav {
-display: flex;
-align-items: center;
-position: fixed;
-top: 0%;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background: #f1edec;
 }
-nav {
-width: 100%;
-background: #D5CFCE;
+.active {
+  background: #b1abaa;
 }
 .nav-item {
-padding: 14px 16px;
-cursor: pointer;
-border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  border: none;
+}
+.nav-item > img {
+  vertical-align: text-top;
+  border-radius: 6px;
 }
 .nav-item:hover {
-background-color: white;
+  background-color: white;
 }
 .nav-item > a {
-color: black;
-text-decoration: none;
-
+  color: black;
+  text-decoration: none;
+  
 }
 .second-nav {
-position: relative;
-top: 0;
-left: 36%;
-float: right;
-display: flex;
-font-weight: bold;
+  padding-top: 7px;
+  position: relative;
+  display: flex;
+  font-weight: bold;
 }
 
 /* main */
 main {
-margin-top: 46px;
+  margin-top: 50px;
+}
+#inicio {
+  background-image: url(../imagenes/restaurantImage.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-name2 {
+  font-size: 2.5vw;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+.rombo{ /* hay que hacer que tenga un borde, girarlo 90º para hacerlo rombo y background color blanco, si se gira la palabra, hacer girar el span*/
+  margin: 5px;
+  float: left;
+  width: 180px;
+  margin-top: 180px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 160px;
 }

@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery</title>
     <!-- logos redes sociales-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <!-- Fuente-->
+    <script src="https://kit.fontawesome.com/9824a52eab.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./imagenes/">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./reservas.html">
@@ -18,49 +23,83 @@
 </head>
 <body>
     <header>
-        <nav class="main-nav">
-            <div class="nav-item">
-                <a href="./index.html">
-                    <span>La buena vida</span>
+        <nav class="main-nav" onscroll="myFunction()">
+            <div class="nav-item col-md-4 justify-content-start">
+                <a class="nav-item" href="./index.html">
+                    <span id="main-name">La Buena Vida</span>
                 </a>
             </div>
-            <div class="nav-item">
-                <a href="#">
-                    <span>RESTAURANTE</span>
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="#">
-                    <span>NOSOTROS</span>
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="#">
-                    <span>CONTACTO</span>
-                </a>
-            </div>
-            <div class="nav-item">
-                <img src="./imagenes/SpainFlag.jpg" alt="Español" width="36" height="36">
-            </div>
-            <div class="nav-item">
-                <img src="./imagenes/UKFlag.jpg" alt="English" width="36" height="36">
+            <div class="second-nav col-md-8 nav justify-content-end">
+                <div class="nav-item">
+                    <a href="#">
+                        <span class="es">RESTAURANTE</span>
+                        <span class="en">RESTAURANT</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#biografia">
+                        <span class="es">NOSOTROS</span>
+                        <span class="en">WE ARE...</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#contact">
+                        <span class="es">CONTACTO</span>
+                        <span class="en">CONTACT</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <img onclick="setLanguaje('es')" src="./imagenes/SpainFlag.jpg" alt="Español" width="36"
+                        height="36">
+                </div>
+                <div class="nav-item">
+                    <img onclick="setLanguaje('en')" src="./imagenes/UKFlag.jpg" alt="English" width="36" height="36">
+                </div>
             </div>
         </nav>
-	</header>
+    </header>
     
     <main>
-        <div id="inicio">
+
+        <div id="inicio" class="row">
             <!--Aqui estas anclas la de delivery y reservas enlazan a otro documento HTML!!!!-->
-            <h1> <img src="#" alt=""></h1>
-    
-            <a class="delivery" href="./delivery.html">DELIVERY</a>
-        
-            <a class="carta" href="#carta">CARTA</a>
-        
-            <a class="reservas" href="./reservas.html"> RESERVAS</a>
+
+            <div class="col-md-4 vertical">
+                <div class="rombo">
+                    <a class="delivery" href="./delivery.html">
+                        <span class="es"><img src="./imagenes/delivery.png"></span>
+                    </a>
+                    <a class="delivery">
+                        <span class="en"><img src="./imagenes/delivery.png"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 vertical">
+                <div class="rombo">
+                    <a class="carta" href="./pdf/CartaEsp.pdf">
+                        <span class="es"><img src="./imagenes/carta.png"></span>
+                    </a>
+                    <a class="carta" href="./pdf/CartaEng.pdf">
+                        <span class="en"><img src="./imagenes/menu.png"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 vertical">
+                <a class="rombo" id="reservas" href="./reservas.html">
+                    <span class="es"><img src="./imagenes/reservas.png"></span>
+                    <span class="en"><img src="./imagenes/booking.png"></span>
+                </a>
+            </div>
         </div>
 
         
     </main>
+
+    <script src="./javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 </html>
